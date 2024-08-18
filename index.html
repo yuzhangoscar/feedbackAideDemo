@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://feedbackaide.staging.learnosity.com/js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="feedback-session-01"></div>
+    <script>
+        let rubricJSON;
+        const session_uuid = "36eebda5-b6fd-4e74-ad06-8e69dfb89e3e";
+
+        const loadToken = async (feedbackSessionUuid) => {
+            const response = await fetch('token.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    session_uuid: feedbackSessionUuid,
+                    permission: 'RW'
+                })
+            });
+            return response.json();
+        };
+
+        fetch('rubric.json')
+        .then(response => response.json())
+        .then(data => rubricJSON = data);
+
+        async function setup() {
+            try {
+                window.feedbackApp = await LearnosityFeedbackAide.init();
+            }
+            catch (err) { console.log(err); }
+
+            try {
+                const tokenData = await loadToken(session_uuid);
+            }
+            catch (err) { console.log(err); }
+            console.log(JSON.stringify(tokenData));
+            
+            window.feedbackSession = await window.feedbackApp.feedbackSession(tokenData.security, {
+                "session_uuid": session_uuid,
+                "stimulus": "Write an essay about obesity and its impact on the society",
+                "response": "Obesity is ...",
+                "rubric": rubricJSON
+            });
+
+            const sessionUI = await window.feedbackSession.createUI({
+                // Optional options to hide unwanted UI
+                "modules": {
+                    "response": false,
+                    "score": false,
+                    // there are other options to hide as well
+                    "rubric": false,
+                    "feedback": false,
+                }
+            });
+            sessionUI.attach(document.querySelector('.feedback-session-01'));
+            sessionUI.generateFeedback();
+        }
+
+        setup();
+
+        // const security = await loadTokenSecurity({
+        //     "session_uuid": '36eebda5-b6fd-4e74-ad06-8e69dfb89e3e',
+        //     "permission": 'RW'
+        // });
+    </script>
+</body>
+</html>

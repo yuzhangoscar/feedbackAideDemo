@@ -1,0 +1,161 @@
+{
+    "title": "Obesity Essay Rubric",
+    "type": "analytic",
+    "criteria": [
+        {
+            "title": "Understanding of the topic",
+            "type": "discrete",
+            "levels": [
+                {
+                    "score": 1,
+                    "title": "Unsatisfactory",
+                    "description": "Fails to demonstrate an understanding of the topic"
+                },
+                {
+                    "score": 2,
+                    "title": "Needs Improvement",
+                    "description": "Demonstrates a limited understanding of the topic, with unclear or insufficient analysis"
+                },
+                {
+                    "score": 3,
+                    "title": "Satisfactory",
+                    "description": "Demonstrates a basic understanding of the topic, with some basic analysis"
+                },
+                {
+                    "score": 4,
+                    "title": "Good",
+                    "description": "Demonstrates a good understanding of the topic, with mostly clear analysis"
+                },
+                {
+                    "score": 5,
+                    "title": "Excellent",
+                    "description": "Demonstrates a deep understanding of the topic, with clear and insightful analysis"
+                }
+            ]
+        },
+        {
+            "title": "Identification of Personal and Societal Problems",
+            "type": "discrete",
+            "levels": [
+                {
+                    "score": 1,
+                    "title": "Unsatisfactory",
+                    "description": "Fails to identify or analyse personal and societal problems resulting from obesity"
+                },
+                {
+                    "score": 2,
+                    "title": "Needs Improvement",
+                    "description": "Attempts to identify and analyse personal and societal problems resulting from obesity, but is unclear or incomplete"
+                },
+                {
+                    "score": 3,
+                    "title": "Satisfactory",
+                    "description": "Identifies and analyses some personal and societal problems resulting from obesity, but lacks detail or clarity"
+                },
+                {
+                    "score": 4,
+                    "title": "Good",
+                    "description": "Clearly identifies and analyses both personal and societal problems resulting from obesity, but may lack some detail or depth"
+                },
+                {
+                    "score": 5,
+                    "title": "Excellent",
+                    "description": "Clearly and thoroughly identifies and analyses both personal and societal problems resulting from obesity"
+                }
+            ]
+        },
+        {
+            "title": "Use of Evidence",
+            "type": "discrete",
+            "levels": [
+                {
+                    "score": 1,
+                    "title": "Unsatisfactory",
+                    "description": "Does not use evidence to support analysis"
+                },
+                {
+                    "score": 2,
+                    "title": "Needs Improvement",
+                    "description": "Uses insufficient or irrelevant evidence to support analysis"
+                },
+                {
+                    "score": 3,
+                    "title": "Satisfactory",
+                    "description": "Uses limited or somewhat relevant evidence to support analysis"
+                },
+                {
+                    "score": 4,
+                    "title": "Good",
+                    "description": "Uses some relevant and credible evidence to support analysis"
+                },
+                {
+                    "score": 5,
+                    "title": "Excellent",
+                    "description": "Uses a range of relevant and credible evidence to support analysis"
+                }
+            ]
+        },
+        {
+            "title": "Organization and Clarity",
+            "type": "discrete",
+            "levels": [
+                {
+                    "score": 1,
+                    "title": "Unsatisfactory",
+                    "description": "Essay is disorganised and unclear, with no strong topic sentences or transitions"
+                },
+                {
+                    "score": 2,
+                    "title": "Needs Improvement",
+                    "description": "Essay is poorly organised and unclear, lacking strong topic sentences and transitions"
+                },
+                {
+                    "score": 3,
+                    "title": "Satisfactory",
+                    "description": "Essay is somewhat organised and clear, but may lack strong topic sentences and transitions"
+                },
+                {
+                    "score": 4,
+                    "title": "Good",
+                    "description": "Essay is mostly organised and clear, with some strong topic sentences and transitions"
+                },
+                {
+                    "score": 5,
+                    "title": "Excellent",
+                    "description": "Essay is well-organised and clear, with strong topic sentences and transitions"
+                }
+            ]
+        },
+        {
+            "title": "Grammar and Mechanics",
+            "type": "discrete",
+            "levels": [
+                {
+                    "score": 1,
+                    "title": "Unsatisfactory",
+                    "description": "Severe errors in grammar or mechanics that make the essay incomprehensible"
+                },
+                {
+                    "score": 2,
+                    "title": "Needs Improvement",
+                    "description": "Many errors in grammar or mechanics that impede understanding"
+                },
+                {
+                    "score": 3,
+                    "title": "Satisfactory",
+                    "description": "Some errors in grammar or mechanics that do not significantly impede understanding"
+                },
+                {
+                    "score": 4,
+                    "title": "Good",
+                    "description": "Few minor errors in grammar or mechanics"
+                },
+                {
+                    "score": 5,
+                    "title": "Excellent",
+                    "description": "No errors in grammar or mechanics"
+                }
+            ]
+        }
+    ]
+}
